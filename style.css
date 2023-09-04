@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Analog-clock/assets/clock-background.jpeg);
+  background-size: cover;
+  
+}
+
+.clock {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  /* border: 8px solid #fff; */
+  background-image: url(/Analog-clock/assets/clock.png);
+  background-position: center;
+  background-size: contain;
+  box-shadow: 6px 6px 8px rgba(119, 119, 119, 0.3);
+}
+
+.hands {
+  position: absolute;
+  top: 50%;
+  background-color: black;
+  /* height: 1px; */
+  transform-origin: 100%;
+  /* transform: rotate(90deg); */
+  transition: all 0.05s;
+  transform: translateY(-50%);
+  transition-timing-function: linear(0 0%, 1.28 23.12%, 1 100%);
+  border-radius: 10px 0 0 10px;
+}
+
+.second-hand {
+  height: 2px;
+  width: 48%;
+  left: 2%;
+}
+.minute-hand {
+  width: 45%;
+  left: 5%;
+  height: 5px;
+  /* transform: rotate(15deg); */
+}
+
+.hour-hand {
+  width: 35%;
+  left: 15%;
+  height: 7px;
+}
+
+.center-dot {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
