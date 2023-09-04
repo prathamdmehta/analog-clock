@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/clock-background.jpg);
+  background-image: url(clock-background.jpg);
   background-size: cover;
   
 }
@@ -24,7 +24,7 @@ body {
   height: 30rem;
   border-radius: 50%;
   /* border: 8px solid #fff; */
-  background-image: url(/assets/clock.png);
+  background-image: url(clock.png);
   background-position: center;
   background-size: contain;
   box-shadow: 6px 6px 8px rgba(119, 119, 119, 0.3);
